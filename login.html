@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon page -->
+    <link rel="icon" href="content/asstes/image/icon.png">
+    <!-- link fontasome -->
+    <link rel="stylesheet" href="content/css/vendors/all.min.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="content/css/main.css">
+</head>
+<body>
+    
+   <!-- Start navbar -->
+   <nav>
+    <div class="nav-fixed">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="content/asstes/image/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- list  -->
+            <div class="list">
+                <div class="link-list">
+                    <div class="link">
+                        <a href="about.html" target="_self">About</a>
+                    </div>
+                    <div class="link">
+                        <a href="why-tutoruu.html" target="_self">Why Tutoruu</a>
+                    </div>
+                    <div class="link">
+                        <a href="universities.html" target="_self">Universities</a>
+                    </div>
+                    <div class="link">
+                        <a href="terms.html" target="_self">Terms & Privacy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- login -->
+            <div class=" w-25 d-flex align-items-center justify-content-end body-login" >
+                
+                <div class="login">
+                        <p class="name-user">ibrahim</p>
+                    <a class="link-login" href="login.html" target="_self">
+                        <i class="fas fa-user user"></i>
+                    </a>
+                </div>
+
+                <div class="logout ">
+                    <p class="me-2 mb-0">log Out</p>
+                    <div><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!-- End navbar -->
+
+ <!-- Start navbar mobila -->
+<div class="icon-nav">
+    <i class="bars fas fa-bars"></i>
+</div>
+
+<div class="navbar-mobila">
+    <div class="container">
+        <div class="logo-mo">
+            <a href="index.html"><img class="img-mobila" src="content/asstes/image/logo.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<!-- End navbar mobila -->
+<!-- <div class="load"><img src="content/asstes/image/Hourglass.gif" alt=""></div> -->
+    <!-- Start login -->
+    <section class="form">
+        <div class="container">
+            <div class="login-page">
+            <div class="heading__form">
+                <h1>Welcome Back!</h1>
+            </div>
+            <form id="form">
+                <label for="email"> 
+                    <p class="tiltle-input">Email</p>
+                    <input type="email" name="email"  id="email" placeholder="email" >
+                    <p class="field-email">This field is required</p>
+                </label>
+                <label for="password"> 
+                    <p class="tiltle-input">password</p>
+                    <input type="password" name="password" id="password" placeholder="password" >
+                    <p class="field-pass">This field is required</p>
+                </label>
+                <button type="button"  class="btn-orangen submit">Login</button>
+            </form>
+            <div class="buttons__login">
+                <button class="google">
+                    <p>
+                        <p><img src="content/asstes/image/google.svg" alt="google">Login with Google</p>
+                    </p>
+                </button>
+                <button class="facebook">
+                    <p>
+                        <i class="fab fa-facebook fac"></i>
+                        <p>Login with Facebook</p>
+                    </p>
+                </button>
+            </div>
+            <div class="res">
+                <p class="text-center sign">No account yet? <span class="color-secondary pointer">Sign up!</span></p>
+                <p>
+                    Forgot your password? <span class="color-secondary"> Reset your password </span></p>
+            </div>
+        </div>
+
+        <div class="signUp">
+            <div class="">
+                <h2 class="p-1">Create your account</h2>
+                <div class="buttons__login">
+                    <button class="google">
+                        <p>
+                            <p><img src="content/asstes/image/google.svg" alt="google">Sign up with Google</p>
+                        </p>
+                    </button>
+                    <button class="facebook">
+                        <p>
+                            <i class="fab fa-facebook fac"></i>
+                            <p>Sign up with Facebook</p>
+                        </p>
+                    </button>
+                    <button class="btn-orangen w-100 p-1 sign-email">
+                        <p>
+                            <p>Sign up with email</p>
+                        </p>
+                    </button>
+                </div>
+                <p class="text-center mt-4">Already have an account? <span class="color-secondary pointer">Login instead</span></p>
+            </div>
+        </div>
+
+        <div class="create-email">
+            <div>
+                <h2 class="fw-bold">Create your account</h2>
+                <div>
+                    <form action="">
+                        <label for="name" class="p-2">
+                            name
+                            <input class="p-2 rounded-1" type="text" id="name" required>
+                        </label>
+                        <label for="Username" class="p-2">
+                            Username
+                            <input type="text" class="p-2 rounded-1" id="Username" required>
+                        </label>
+                        <label for="phone" class="p-2">
+                            phone
+                            <input type="text" class="p-2 rounded-1" id="phone" required>
+                        </label>
+                        <label for="University" class="p-2">
+                            <p>University</p>
+                            <select name="University" class="w-100 p-1 focus-none border-0  rounded-2" id="University" required>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                                <option value="Ahram Canadian University">Ahram Canadian University</option>
+                            </select>
+                        </label>
+                        <label for="emailcreate" class="p-2">
+                            email
+                            <input type="email" id="emailcreate" class="p-2 rounded-1" required required>
+                        </label>
+                        <label for="passwordcreate" class="p-2">
+                            password
+                            <input type="password" id="passwordcreate" class="p-2 rounded-1" required required>
+                        </label>
+                        <label for="confirm password" class="p-2">
+                            confirm password
+                            <input type="password" class="p-2 rounded-2" id="confirmpassword" required required>
+                        </label>
+                <button type="button"  class="btn-orangen submit" id="btncreate">Create Account</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+    <div class="succes position-fixed p-4 rounded-2 ">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="text-center  w-100 p-3 rounded-top-2 bg-orangen">
+                        <i class="icon-check fas fa-check border border-white p-2    rounded-circle "></i>
+                        <p class="m-0 fw-bolder text-white">Succes</p>
+                    </div>
+                    <div class="w-100 text-center p-3 content-succes rounded-bottom-2">
+                        <p class="m-0 fw-medium mb-2">Congratulations, your account has <br> been succesfuly creeated</p>
+                        <button class="close-succes btn-orangen py-2 px-4  fs-8 fw-medium">Coutinue</button>
+                    </div>
+                </div>
+    </div>
+    
+    <div class="error position-fixed shadow">
+        <div>
+            <i class="fas fa-xmark border py-1 px-2 rounded-circle border-danger"></i>
+            <p class="fw-light description-error"></p>
+            <button class="btn btn-danger btn-error">close</button>
+        </div>
+    </div>
+    <!-- Endl ogin -->
+
+
+
+
+
+
+
+<!-- script fontasome -->
+    <script src="content/js/vendors/all.min.js"></script>
+    <!-- script bootstarp -->
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    
+    <!-- Start login -->
+    <script src="content/js/login.js" ></script>
+</body>
+</html>

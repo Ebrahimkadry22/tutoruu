@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon page -->
+    <link rel="icon" href="content/asstes/image/icon.png">
+    <!-- link fontasome -->
+    <link rel="stylesheet" href="content/css/vendors/all.min.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/booking.css">
+</head>
+<body>
+
+    <div class="load"><img src="content/asstes/image/Hourglass.gif" alt=""></div>
+    
+<header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="content/asstes/image/logo.png" alt="">
+            </a>
+        </div>
+        <div class="list-link">
+                <div class="icon-close">
+                    <i class="fas fa-x"></i>
+                </div>
+                <div class="link"><a href="">tutors</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <div class="log">
+                <a href="#">Log out <i class="fas fa-right-long"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="nav-samll">
+            <div class="logo"><a href="index.html"><img src="content/asstes/image/logo.png" alt=""></a>
+            </div>
+            <div class="icon-bar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    
+</header>
+<section class="find-tec">
+    <div class="container">
+        <div class="title-find">
+            <h1>Find your perfect tutor</h1>
+            <p>Discover the best tutors at your university on Tutoruu's catalogue and search page. Filter by major, hourly rate, availability, and rating to find your ideal tutor</p>
+        </div>
+    </div>
+</section>
+
+<section class="filters">
+    <div class="container">
+        <div class="content d-flex align-items-center justify-content-between">
+            <div class="sort position-relative">
+                <button class="btn btn-sort">Sort<i class="fas fa-angle-down ms-2"></i></button>
+                <div class="down-sort">
+                    <button class=" fs-8 w-100  p-2 rounded-0 most sortclick" value="1" data-value="most">Most Popular</button>
+                    <button class=" fs-8 w-100  p-2 rounded-0 newest sortclick" value="1" data-value ='newest'>Newest</button>
+                    <button class=" fs-8 w-100  p-2 rounded-0 best sortclick"   value="1" data-value ='best'>Best rated</button>
+                    <button class=" fs-8 w-100  p-2 rounded-0 high" onclick="sortprice(this.dataset.value)"  data-value ='high'>Price: High to low</button>
+                    <button class=" fs-8 w-100  p-2 rounded-0 low" onclick="sortprice(this.dataset.value)" data-value ='low'>Price: Low to high</button>
+                </div>
+            </div>
+            <div class="filter d-flex align-items-center">
+                <div class="search">
+                    <input type="text" onkeyup="search(this.value,this.id)" id="name" name="search"  placeholder="Search Subjects, Classes, or Tutors">
+                </div>
+                <div class="filter__univ d-flex align-items-center">
+                    <div class="univ position-relative">
+                        <button class="btn btn-unvi"><span class="me-2">University</span><i class="fas fa-angle-down"></i></button>
+                        <div class="position-absolute down-unvi">
+                            <input class="border rounded-1" type="text" onkeyup="search(this.value,this.id)"name="university" id="univ">
+                            
+                            
+                            <!-- <div class="position-absolute icon-unvi"><i class="fas fa-angle-down"></i> 
+                             <div class="list-un position-absolute right-0  bg-white  overflow-y-scroll">
+                                <ul class="p-0" >
+                                    <li class="name-unvi p-2" data-item="A"><div><p>American University in Cairo</p></div></li>
+                                    <li class="name-unvi p-2" data-item="G"><div><p>German International University</p></div></li>
+                                    <li class="name-unvi p-2" data-item="r"><div><p>Arab Academy for Science, Technology and Maritime Transport</p></div></li>
+                                </ul>
+                            </div>  -->
+                       
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub position-relative ">
+                        <button class="btn "><span class="me-2">Subject</span><i class="fas fa-angle-down"></i></button>
+                        <div class="position-absolute down-sub">
+                            <input class="border rounded-1" onkeyup="search(this.value,this.id)" type="text" name="sub" id="sub">
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End find -->
+
+<!-- Start products -->
+<section class="prodcut bg-white">
+    <div class="container">
+        <div class="row align-items-stretch  body-teacher" id="body-teacher">
+        </div>
+    </div>
+</section>
+<!-- End products -->
+
+
+    
+<!-- script fontasome -->
+<script src="content/js/vendors/all.min.js"></script>
+<!-- script bootstarp -->
+<script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+<!-- script file js -->
+<script src="content/js/bookingNew.js" ></script>
+</body>
+</html>
